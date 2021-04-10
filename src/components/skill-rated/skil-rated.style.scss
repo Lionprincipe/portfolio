@@ -1,0 +1,23 @@
+$primary-stop-color: #9f2fff;
+$secondary-stop-color: #0bb1d3;
+
+.progress-container {
+  position: relative;
+  .progress-bar {
+    border: none;
+    background-color: $secondary-stop-color;
+    width: 60%;
+    height: 8px;
+    &::before {
+      content: '';
+      z-index: -1;
+      position: absolute;
+      height: inherit;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: $primary-stop-color;
+    }
+  }
+}
