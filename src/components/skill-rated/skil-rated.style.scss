@@ -1,8 +1,13 @@
 $primary-stop-color: #9f2fff;
 $secondary-stop-color: #0bb1d3;
 
+.progress-rate {
+  color: $secondary-stop-color;
+}
 .progress-container {
   position: relative;
+  margin: 4px 0 16px;
+
   .progress-bar {
     border: none;
     background-color: $secondary-stop-color;

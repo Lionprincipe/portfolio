@@ -9,23 +9,21 @@ export const Resume = () => {
   return (
     <div>
       <section className="personal-info">
-        <div className="profile-picture">
-          <img src={profile.picture} alt="profile" width="25%" height="25%" />
-        </div>
-
         <h1 className="headline">
           <div className="fullname">
-            <span>{profile.firstName}</span>
-            <span>{profile.lastName}</span>
-
+            {`${profile.firstName} ${profile.lastName}`}
           </div>
           <div className="job-title">
             {profile.jobName}
           </div>
         </h1>
+
+        <div className="profile-picture">
+          <img src={profile.picture} alt="profile" />
+        </div>
+
       </section>
       <section className="resume">
-        <h2 className="subtitle"> {resume.title}</h2>
         <p>{resume.description}</p>
       </section>
       <section className="skills">
@@ -49,20 +47,10 @@ export const Resume = () => {
               {languages.items.map(({ label, rate }) => <li key={label}>
                 <SkillRated label={label} rate={rate} />
 
-                {/* <div className="progress-card">
-                  <span className="rate">{rate}</span>
-                  <span className="rate">{label}</span>
-                </div> */}
-
               </li>
               )}
             </ul>
           </div>
-
-
-
-
-
         </article>
         )}
       </section>

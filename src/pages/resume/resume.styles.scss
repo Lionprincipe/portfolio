@@ -1,11 +1,18 @@
 $color-primary: rgb(148, 148, 236);
+$primary-stop-color: #9f2fff;
+$secondary-stop-color: #0bb1d3;
 $padding-big: 24px;
 body {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   line-break: auto;
   line-height: 1.75;
+  font-family: Raleway, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.5;
 }
-* {
+*,
+*:after,
+*:before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,17 +21,23 @@ h1,
 h2,
 h3,
 h4 {
+  font-weight: normal;
+  font-size: 1em;
   text-transform: capitalize;
 }
 
 h1 {
-  font-weight: normal;
+  text-align: center;
+  font-size: 1.4em;
+}
+ul,
+li {
+  list-style: none;
 }
 
 h2 {
   border: 0.5px solid transparent;
-
-  border-bottom-color: $color-primary;
+  border-bottom-color: $primary-stop-color;
   padding: 16px 8px;
   margin-bottom: 16px;
 }
@@ -38,18 +51,27 @@ section {
 
 .personal-info {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   & .headline {
-    position: absolute;
+    border-bottom: 0.5px solid $primary-stop-color;
     top: 50%;
     left: 28px;
+    padding-bottom: 12px;
+    margin-bottom: 3em;
     & .fullname {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
       & span {
         display: block;
+        text-align: center;
       }
       & span:first-child {
         font-size: 1em;
-        padding-bottom: 0.3em;
+        text-align: center;
       }
       & span:last-child {
         margin-bottom: 16px;
@@ -58,26 +80,49 @@ section {
         text-transform: uppercase;
       }
     }
-    .job-title {
-      font-style: italic;
-      color: $color-primary;
-    }
   }
 }
+
 .profile-picture {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+  margin-bottom: 24px;
+
   & > img {
     width: 40%;
     display: inline-block;
+    filter: contrast(150%);
+    clip-path: circle(50% at 50%);
+    -webkit-clip-path: circle(50% at 50%);
+  }
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 25%;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    clip-path: circle(30% at 24%);
+    -webkit-clip-path: circle(30% at 24%);
+    opacity: 0.2;
+    background-image: linear-gradient(
+      to bottom,
+      transparent,
+      $secondary-stop-color,
+      $primary-stop-color
+    );
   }
 }
 
 .article-wrapper {
   display: flex;
   align-items: flex-start;
+  padding-bottom: 48px;
   & .icon-box {
     margin-right: 24px;
     margin-top: 18px;

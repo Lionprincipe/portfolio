@@ -10,10 +10,7 @@ export const data = {
   resume: {
     title: 'resume',
     description: `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, quos nam, ipsam saepe quibusdam cumque autem est inventore, dolorum eum ipsum aliquam fugit labore illo assumenda doloremque quae suscipit nobis!
-        Incidunt error nisi repudiandae veniam dolor ea qui quisquam hic sit. Nisi commodi doloremque, rerum saepe consequatur hic recusandae deserunt blanditiis sequi ipsam error. Ducimus enim excepturi aperiam eius dolore!
-        Ea ipsum modi officiis accusamus inventore possimus quas voluptates nihil error aspernatur distinctio suscipit accusantium, voluptatem laborum delectus corrupti quae reprehenderit nisi deserunt? Quae aspernatur a dolorem. Aperiam, molestias? Sit.
-        Labore culpa eius temporibus accusamus quia! Suscipit quaerat ipsum numquam dolore officia ab enim cum, esse eveniet itaque, labore nostrum rem iure est qui reiciendis! Vitae quasi veritatis voluptate nemo.`
-
+     .`
   },
   skills: {
     title: 'Skills',
@@ -22,12 +19,49 @@ export const data = {
       {
         icon: 'front-end', title: 'Front-end', description: ` Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero pariatur nostrum ipsa, magni, saepe, id tempore in voluptates dolor quas delectus ullam deserunt necessitatibus! Odit voluptate similique consequuntur quia minus?`,
         languages: {
-          title: 'Languages',
+          title: 'languages & tools',
           items:
             [
-              { label: 'HTML', rate: 80, }
+              { label: 'React', rate: 80, },
+              { label: 'redux', rate: 80, },
+              { label: 'Javascript', rate: 75, },
+              { label: 'Typescript', rate: 55, },
+              { label: 'HTML', rate: 85, },
+              { label: 'CSS', rate: 85, },
+              { label: 'SASS', rate: 70, },]
+        },
+
+      },
+      {
+        icon: 'back-end', title: 'Back-end', description: ` Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero pariatur nostrum ipsa, magni, saepe, id tempore in voluptates dolor quas delectus ullam deserunt necessitatibus! Odit voluptate similique consequuntur quia minus?`,
+        languages: {
+          title: 'technologies',
+          items:
+            [
+              { label: 'Rest API- Express', rate: 75, },
+              { label: 'GraphQL', rate: 55, },
+              { label: 'Mongodb', rate: 70, },
+              { label: 'Sql', rate: 70, },
+              { label: 'Mongoose', rate: 75, },
+              { label: 'TypeOrm', rate: 60, },
+              { label: 'Git', rate: 70, },
             ]
-        }
+        },
+
+      },
+      {
+        icon: 'ux-design', title: 'UX-design', description: ` Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero pariatur nostrum ipsa, magni, saepe, id tempore in voluptates dolor quas delectus ullam deserunt necessitatibus! Odit voluptate similique consequuntur quia minus?`,
+        languages: {
+          title: 'tools ',
+          items:
+            [
+              { label: 'Adobe XD', rate: 75, },
+              { label: 'Sketch', rate: 50, },
+              { label: 'Adobe Illutrator', rate: 70, },
+              { label: 'Adobe Photoshop', rate: 70, },
+            ]
+        },
+
       }
     ]
   }

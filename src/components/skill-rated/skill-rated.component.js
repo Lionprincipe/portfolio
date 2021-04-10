@@ -4,7 +4,7 @@ export const SkillRated = ({ label, rate }) => {
   return (
     <div >
       <div>
-        <span>{`${rate} %`}</span> <span>{label}</span>
+        <span className="progress-rate">{`${rate} %`}</span> <span>{label}</span>
       </div>
       <div className="progress-container">
         <hr className="progress-bar" style={{ width: `${rate}%` }} />

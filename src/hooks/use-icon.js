@@ -11,7 +11,7 @@ export const useIcon = (iconName) => {
     case 'github': {
       return Github
     }
-    case 'backend': {
+    case 'back-end': {
       return BackEnd
     }
 
