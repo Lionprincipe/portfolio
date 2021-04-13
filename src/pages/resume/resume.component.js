@@ -7,7 +7,7 @@ import './resume.styles.scss'
 export const Resume = () => {
   const { profile, resume, skills } = data
   return (
-    <div>
+    <div className="page-wrapper">
       <section className="personal-info">
         <h1 className="headline">
           <div className="fullname">
